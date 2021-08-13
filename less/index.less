@@ -1,0 +1,113 @@
+@import url(base.less);
+@color:#fb7299;
+.susp3nsion-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 22.4vw;
+  z-index: 1;
+  background-color: #fff;
+  .m-navbar {
+    display: flex;
+    width: 100%;
+    height:11.7333vw;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3.2vw 0 4.8vw;
+    .logo i{
+      color: #fb7299;
+      font-size: 6.9333vw;
+    }
+    .right {
+      display: flex;
+    }
+    .right a:nth-child(1) i {
+      font-size: 5.8667vw;
+      color: #ccc;
+      margin-right: 5.8667vw;
+      margin-top: 0.5333vw;
+    }
+    .right a:nth-child(2) {
+      display: block;
+      width: 6.4vw;
+      height: 6.4vw;
+      margin-right: 6.4vw;
+    }
+    .right a:nth-child(3) {
+      display: block;
+      width: 19.2vw;
+      height: 6.4vw;
+    }
+  }
+  .channel-menu {
+    display: flex;
+    justify-content: space-between;
+    height: 10.6667vw;
+    border-bottom: 0.2667vw solid #eee;
+    .more {
+      a {
+        display: block;
+        width: 10.6667vw;
+        height: 10.6667vw;
+        text-align: center;
+        line-height: 10.6667vw;
+        color: #ccc;
+        .iconfont {
+          font-size: 5.8667vw;
+        }
+      }
+    }
+    .tab {
+      ul {
+        display: flex;
+        li {
+          padding: 0 4.2667vw;
+          a {
+            display: block;
+            height: 10.1333vw;
+            line-height: 10.1333vw;
+            font-size: 3.7333vw;
+            &.current {
+              color: #fb7299;
+              border-bottom: 0.5333vw solid #fb7299;
+            }
+          }
+        }
+      }
+      
+    }
+  }
+}
+.video-content {
+  padding: 22.4vw 1.3333vw 0;
+  .video-list {
+    display: flex;
+    flex-wrap: wrap;
+    a {
+      width: 50%;
+      padding: 2.1333vw 1.3333vw;
+      font-size: 3.2vw;
+      .txt {
+        margin-top: 1.3333vw;
+      }
+      .pic {
+        position: relative;
+        .count {
+          width: 100%;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          display: flex;
+          justify-content: space-between;
+          color: #fff;
+          padding: 2.1333vw;
+          background: linear-gradient(0deg,rgba(0,0,0,.85),transparent);
+          i {
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+  }
+}
